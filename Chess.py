@@ -9,6 +9,7 @@ def opponent(color):
     else:
         return WHITE
 
+# Adding first comment!
 
 color = WHITE
 if color == BLACK:
