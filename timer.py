@@ -1,10 +1,14 @@
 import time
-seconds = 0
-minutes = 0
+seconds = 50
+minutes = 59
+hours = 0
 while True:
     seconds += 1
     time.sleep(1)
-    if seconds == 61:
+    if seconds == 60:
         minutes += 1
         seconds = 0
-    print(str(minutes)+":"+str(seconds))
+    if minutes == 60:
+        hours += 1
+        minutes = 0
+    print(str(hours)+":"+str(minutes)+":"+str(seconds))
